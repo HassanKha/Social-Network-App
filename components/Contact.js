@@ -11,6 +11,7 @@ function Contact({src , name }) {
         width={50}
         height={50}
         layout="fixed"
+        alt={name}
          />
          <p>{name}</p>
          <div className="h-3 w-3 animate-bounce rounded-full  absolute bottom-2 left-7 bg-green-400"></div>

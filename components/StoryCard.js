@@ -12,11 +12,13 @@ function StoryCard({src,profile,name}) {
         height={40}
         layout='fixed'
         objectFit="cover"
+        alt={name}
         />
         <Image
          className='object-cover filter brightness-75 rounded-full lg:rounded-3xl'
          src={src}
          layout='fill'
+         alt={name}
        /> 
        <p className='absolute text-white opacity-0 lg:opacity-100 bottom-4 w-5/6 text-sm font-bold truncate'>{name}</p>
       

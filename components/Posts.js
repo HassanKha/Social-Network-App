@@ -13,6 +13,7 @@ function Posts() {
       {realtimePosts &&
         realtimePosts.docs.map((post) => (
           <Post
+          key={post.id}
             id={post.id}
             message={post.data().message}
             name={post.data().name}

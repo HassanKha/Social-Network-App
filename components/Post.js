@@ -7,11 +7,11 @@ function Post({ id, name, email, image, message, timestamp, postImage }) {
     <div className="flex flex-col">
       <div className="p-5 bg-white mt-5 rounded-t-2xl shadow-sm">
         <div className="flex items-center space-x-2">
-          <img
+          <Image
             src={image}
             width={40}
             height={40}
-            alt=""
+            alt={name}
             className="rounded-full"
           />
 
@@ -26,7 +26,7 @@ function Post({ id, name, email, image, message, timestamp, postImage }) {
       </div>
       {postImage && (
         <div className="relative h-56 md:h-96 bg-white">
-          <Image src={postImage} objectFit="cover" layout="fill" />
+          <Image alt={name} src={postImage} objectFit="cover" layout="fill" />
         </div>
       )}
       {/* footer of post */}

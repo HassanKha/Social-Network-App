@@ -11,6 +11,7 @@ function SidebarRow({src,Icon,title}) {
              height={30}
              layout="fixed"
              className="rounded-full"
+             alt={title}
            />
         )}
         {Icon && (
