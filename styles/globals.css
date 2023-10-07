@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@layer components {
+  .icon{
+    @apply hover:bg-gray-300 hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full text-gray-700 cursor-pointer;
+  }
+  .inputIcon {
+    @apply flex p-2 justify-center items-center space-x-1 hover:bg-gray-100 flex-grow rounded-xl  cursor-pointer;
+  }
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +33,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
