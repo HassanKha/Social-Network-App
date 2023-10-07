@@ -13,7 +13,7 @@ export default function Home() {
   console.log(session,'b')
   if (!session) {return <Login/>}
   else {
-console.log(session)
+//console.log(session)
   return (
     <div className="">
       <Head>
