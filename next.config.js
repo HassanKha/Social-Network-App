@@ -9,7 +9,8 @@ const nextConfig = {
       "lh3.googleusercontent.com",
       "metro.co.uk",
       "www.usanetwork.com",
-      "encrypted-tbn0.gstatic.com"
+      "encrypted-tbn0.gstatic.com",
+      "avatars.githubusercontent.com"
   ]
   
   },
